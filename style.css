@@ -1,0 +1,129 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.containers {
+  width: 100%;
+  position: relative;
+}
+
+.doctor-1,
+.doctor-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.desktop-text, .mobile-text {
+  position: absolute;
+}
+
+.desktop-text, .sp1 {
+  line-height: 180%;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+.desktop-contract {
+    margin-top: 200px
+}
+.desktop-contract, .name {
+    color: yellow;
+    font-size: 30px
+}
+.desktop-contract, .sp2 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media (min-width: 640px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile,
+  .doctor-mobile {
+    display: none;
+  }
+
+  .doctor-1 {
+    top: 46%;
+    left: 13%;
+    width: 37%;
+    height: 49%;
+  }
+
+  .doctor-2 {
+    width: 42%;
+    height: 75%;
+  }
+
+  .desktop-text {
+    top: 50%;
+    left: 70%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
+
+  .mobile-text {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop,
+  .doctor-desktop {
+    display: none;
+  }
+
+  .doctor-1 {
+    top: 26%;
+    left: 26%;
+    width: 59%;
+    height: 42%;
+  }
+
+  .doctor-2 {
+    width: 76%;
+    height: 51%;
+  }
+
+  .desktop-text {
+    display: none; 
+  }
+
+  .mobile-text {
+    display: block;
+    top: 68%; 
+    left: 50%;
+    width: 80%;
+    bottom: 20px; 
+    transform: translateX(-50%);
+  }
+
+  .mobile-text, .sp1 {
+    font-size: 22px;
+  }
+  .mobile-contract {
+     margin-top: 40px;
+     font-weight: bold
+  }
+}
